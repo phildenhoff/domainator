@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% include "search.html" %}
+<h1>Here is your list of domain names:</h1>
+<ul>
+    {% for tld in tlds %}
+    <li style="list-style: none; font-size: 26px; font-family: monospace, sans-serif; margin-bottom: 16px;
+    background-color: #55b; padding: 4px;">
+        <span class="lineNum">#{{loop.index}}</span>&ensp;&ensp;&ensp;&ensp;{{tld.preLine}}.{{tld.line}}{{tld.path}}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

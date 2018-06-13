@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>DOMAINATOR</h1>
+<span>The number one way to search for a custom domain!</span>
+<br />
+    {% include "search.html" %}
+    {% block subbody %}{% endblock %}
+{% endblock %}

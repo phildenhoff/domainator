@@ -1,0 +1,28 @@
+body { 
+    background-color: #44a;
+    color: #dda;
+    margin: 5vh 25vw 0 25vw;
+}
+
+div.search {
+    width: 100%;
+}
+
+div.search form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+div.search form input.search-text {
+    font-size: 18px;
+    height: 30px;
+    width: 57%;
+    padding-left: 10px;
+}
+
+div.search form input.search-button {
+    width: 20%;
+}
